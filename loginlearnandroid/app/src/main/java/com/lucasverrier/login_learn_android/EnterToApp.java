@@ -24,10 +24,6 @@ public class EnterToApp extends AppCompatActivity {
         setContentView(R.layout.activity_enter_to_app);
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
-        ArrayList<Cartepokemon> exampleList = new ArrayList<>();
-        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "Carapuce", "jet"));
-        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "Legumos", "epine"));
-        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "ChatChien", "griffe"));
 
         recyclerView.setHasFixedSize(true);
 

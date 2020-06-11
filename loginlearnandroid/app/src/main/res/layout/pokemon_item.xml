@@ -13,8 +13,10 @@
         android:id="@+id/img_thumb"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginStart="4dp"
         android:src="@mipmap/ic_launcher"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/mladescription"
@@ -31,6 +33,23 @@
         app:layout_constraintStart_toEndOf="@+id/img_thumb"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/mlattacks"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:text="Headlines"
+        android:textColor="#456"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/img_thumb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
 
     <ImageButton
         android:id="@+id/img_more"
