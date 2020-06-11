@@ -25,11 +25,15 @@ public class EnterToApp extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new MyAdapter(myDataset);
+        ///mAdapter = new MyAdapter(myDataset);
         recyclerView.setAdapter(mAdapter);
 
 
-        ArrayList<Cartepokemon> exampleItems = new ArrayList<>();
+
+        ArrayList<Cartepokemon> exampleList = new ArrayList<>();
+        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "Carapuce", "jet"));
+        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "Legumos", "epine"));
+        exampleList.add(new Cartepokemon(R.drawable.ic_android_black, "ChatChien", "griffe"));
         
     }
 }

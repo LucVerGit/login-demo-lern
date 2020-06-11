@@ -7,11 +7,12 @@
     tools:context=".EnterToApp">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-        android:id="@+id/my_recycler_view"
         android:scrollbars="vertical"
-      />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
