@@ -1,5 +1,7 @@
 package com.lucasverrier.login_learn_android;
 
+import java.util.ArrayList;
+
 public class Cartepokemon {
     public void setmImageRessource(int mImageRessource) {
         this.mImageRessource = mImageRessource;
@@ -37,4 +39,9 @@ public class Cartepokemon {
     public void setAttacks(String attacks) {
         this.attacks = attacks;
     }
+
+
+
+
+
 }
