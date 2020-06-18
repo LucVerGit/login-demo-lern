@@ -11,10 +11,8 @@ import java.util.ArrayList;
 
 public class EnterToApp extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter mMyAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-    private Cartepokemon Cartepokemon;
+    MyAdapter adapter;
+
 
     @Override
 
@@ -22,16 +20,24 @@ public class EnterToApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_enter_to_app);
-        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+       ArrayList<Cartepokemon> cards  = new ArrayList<>();
+       cards.add(new Cartepokemon(R.drawable.ic_android_black,"carpuce","electric"));
+        cards.add(new Cartepokemon(R.drawable.ic_baseline_child_care_24,"miaous","griffe"));
+        cards.add(new Cartepokemon(R.drawable.ic_baseline_emoji_nature_24,"feurisar","charge"));
+        cards.add(new Cartepokemon(R.drawable.ic_baseline_nature_people_24,"cobrazar","decharge"));
+        cards.add(new Cartepokemon(R.drawable.ic_baseline_offline_bolt_24,"poulpe","recharge"));
+        cards.add(new Cartepokemon(R.drawable.ic_baseline_power_24,"conbinator","surcharge"));
 
 
-        recyclerView.setHasFixedSize(true);
 
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+        RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new MyAdapter(cards ,this );
+        adapter.setClickListener(this);
+        recyclerView.setAdapter(adapter);
 
-        mMyAdapter = new MyAdapter(Cartepokemon);
-        recyclerView.setAdapter(mMyAdapter);
+
+
 
 
 

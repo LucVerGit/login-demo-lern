@@ -3,13 +3,12 @@ package com.lucasverrier.login_learn_android;
 import java.util.ArrayList;
 
 public class Cartepokemon {
-    public void setmImageRessource(int mImageRessource) {
-        this.mImageRessource = mImageRessource;
-    }
+
 
     private int mImageRessource;
     private String description;
     private String attacks;
+
 
     public Cartepokemon(int ImageRessource,String mdescription,String mattack)
     {
@@ -19,6 +18,11 @@ public class Cartepokemon {
 
 
     }
+    public void setmImageRessource(int mImageRessource)
+    {
+        this.mImageRessource = mImageRessource;
+    }
+
     public int getmImageRessource()
     {
         return mImageRessource;
